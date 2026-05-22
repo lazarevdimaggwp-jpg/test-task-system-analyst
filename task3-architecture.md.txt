@@ -1,0 +1,16 @@
+# Задание 3 — Архитектура PUSH-уведомлений
+
+## Общая схема работы PUSH-уведомлений
+
+```text
+Мобильное приложение
+        ↓
+ API Gateway / Backend
+        ↓
+ Notification Service
+        ↓
+ Message Broker (Kafka / RabbitMQ)
+        ↓
+ PUSH Provider (Firebase / APNs)
+        ↓
+ Устройство пользователя
